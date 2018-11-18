@@ -1,4 +1,4 @@
-#Homework 7 : Profiling in C
+# Homework 7 : Profiling in C
 
 
 This homework will help you understand the following,
