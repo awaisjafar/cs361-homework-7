@@ -15,8 +15,8 @@ int main(int argc, char *argv[]) {
   /* Timing the Fibonacci calculation for numbers from 1 to 45 */
   time_start("Fibcalc");
   unsigned int i;
-  for (i = 1; i <= 45; ++i) {
-    printf("Fibonacci for %d : %d\n", i, fib(i));
+  for (i = 1; i <= 100; ++i) {
+    printf("Fibonacci for iter %d : %d\n", i, fib(39));
   }
   time_end("Fibcalc");
   time_summary();

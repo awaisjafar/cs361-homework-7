@@ -3,7 +3,7 @@
 #include <pthread.h>
 #include "profile.c"
  
-#define N_THREADS 45
+#define N_THREADS 100
  
 /* Threads DataStructure for passing arguments  */
 typedef struct _thread_data_t {
@@ -21,7 +21,7 @@ int fib(int x) {
 /* Thread function for getting Fibonacci value */
 void *get_fib(void *arg) {
 
-  /* Print the Fibonacci value for the given number */
+  /* Print the Fibonacci value for the given iteration */
 
 }
 

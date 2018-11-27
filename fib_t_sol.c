@@ -3,7 +3,7 @@
 #include <pthread.h>
 #include "profile.c"
  
-#define N_THREADS 45
+#define N_THREADS 100
  
 /* Threads DataStructure for passing arguments  */
 typedef struct _thread_data_t {
@@ -33,10 +33,10 @@ int main(int argc, char **argv) {
   /* create an argument array */
   thread_data_t t_data[N_THREADS];
 
- time_start("Fib_5");
+ time_start("Fib_100");
   /* Creating Threads */
   for (i = 0; i < N_THREADS; ++i) {
-    t_data[i].id = i+1;
+    t_data[i].id = 39;
     if ((r_code = pthread_create(&thr[i], NULL, get_fib, &t_data[i]))) {
       fprintf(stderr, "Error in pthread_create: %d\n", r_code);
       return EXIT_FAILURE;
@@ -46,7 +46,7 @@ int main(int argc, char **argv) {
   for (i = 0; i < N_THREADS; ++i) {
     pthread_join(thr[i], NULL);
   }
-  time_end("Fib_5");
+  time_end("Fib_100");
   time_summary();
 
   return EXIT_SUCCESS;

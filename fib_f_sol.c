@@ -14,32 +14,32 @@ void  Child1Process(void)
 {
      int   i;
 
-     for (i = 2; i <= 45; i=i+4)
-          printf("Child 1 Fib call for i = %d, value = %d\n", i,fib(i));
+     for (i = 1; i <= 25; i=i+1)
+          printf("Child 1 Fib call for iter = %d, value = %d\n", i,fib(39));
 }
 
 void  ParentProcess(void)
 {
      int   i;
 
-     for (i = 1; i <= 45; i=i+4)
-          printf("Parent Fib call for i = %d, value = %d\n", i,fib(i));
+     for (i = 1; i <= 25; i=i+1)
+          printf("Parent Fib call for iter = %d, value = %d\n", i,fib(39));
 }
 
 void  Child2Process(void)
 {
      int   i;
 
-     for (i = 3; i <= 45; i=i+4)
-          printf("Child 2 Fib call for i = %d, value = %d\n", i,fib(i));
+     for (i = 1; i <= 25; i=i+1)
+          printf("Child 2 Fib call for iter = %d, value = %d\n", i,fib(39));
 }
 
 void  Child3Process(void)
 {
      int   i;
 
-     for (i = 4; i <= 45; i=i+4)
-          printf("Child 3 Fib call for i = %d, value = %d\n", i,fib(i));
+     for (i = 1; i <= 25; i=i+1)
+          printf("Child 3 Fib call for iter = %d, value = %d\n", i,fib(39));
 }
 
 
